@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>CJ.Project</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CJ.Project.Domain\CJ.Project.Domain.csproj" />
+    <ProjectReference Include="..\CJ.Project.Application.Contracts\CJ.Project.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Account.Application" Version="1.1.2" />
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="1.1.2" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="1.1.2" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="1.1.2" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="1.1.2" />
+  </ItemGroup>
+
+</Project>
